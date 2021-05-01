@@ -7,6 +7,8 @@
     <title>Maria Silvia Granara</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Josefin+Sans:wght@200;500&family=Sacramento&display,family=Rajdhani&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a47badd97a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +19,7 @@
             <div class="container">
 
 
-                <a class="navbar-brand" href="#">Maria Silvia Granara</a>
+                <a class=" nuevo navbar-brand" href="#">Maria Silvia Granara</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,23 +29,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#informacionBasica">Sobre Mi<span
+                            <a class="otros nav-link" href="#informacion">Sobre Mi<span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experiencialaboral">Experiencia Laboral</a>
+                            <a class="otros nav-link" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#educacion">Educacion</a>
+                        <li class="otros nav-item">
+                            <a class="otros nav-link" href="#educacion">Educacion</a>
                         </li>
+                       
+                      
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="otros nav-link" href="#contacto">Contacto</a>
                         </li>
 
                     </ul>
@@ -55,28 +53,23 @@
     <section class="fondo text-center text-light py-4">
         <div class="container">
             <img src="img/maria silvia granara.jpg" class="avatar py-3">
-            <h3>Maria Silvia Granara</h3>
+            <h3 id="nombre">Maria Silvia Granara</h3>
             <p class="lead">Sofware Developer</p>
         </div>
     </section>
 
     
     <section class="container">
-        <h2 class="diplay -4 text-center my-4" id="informacionBasica">Informacion Basica</h2>
+       
         <hr>
         <article class="shadow p-3 mb-5 bg-white rounded">
-            <h3 class="text-secondary">Datos Personales</h3>
-            <hr>
-            <p><strong>Edad:</strong> 41</p>
-            <p> <strong>mail:</strong> masil79@gmail.com</p>
-            <p> <strong> Telefono:</strong> +54 381 5806276</p>
-            <p> <strong>Direccion:</strong> San Miguel de Tucuman, Argentina </p>
-            <hr>
-            <h3 class="text-secondary">Sobre mi</h3>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ratione earum odit quaerat
+           
+           
+            <h3 class=" titulos text-secondary" id="informacion">Sobre mi</h3>
+            <p class="otros"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ratione earum odit quaerat
                 voluptatibus vero voluptatem itaque porro, iusto aperiam, assumenda, quos ea laborum ut.</p>
         </article>
-        <h2 class="diplay-4 text-center my-4" id="experiencialaboral">Experiencia Laboral</h2>
+        <h2 class="diplay-4 text-center my-4 " id="portfolio">Portfolio</h2>
         <hr>
         <article>
             <div class="card shadow mb-5 bg-white rounded">
@@ -100,7 +93,7 @@
                                 <span class="badge
                                  badge-danger">Git </span>
                                 <span class="badge
-                                  badge-danger">React </span>
+                                  badge-danger"><a href="https://github.com/GranaraMariaSilvia/apiSimpson" class="text-dark" target="_blank">api Simpson</a> </span>
                             </p>
                         </div>
                     </div>
@@ -120,7 +113,7 @@
                                 additional content. This content is a little bit longer.</p>
                             <p> <strong> Habilidades: </strong> <span class="badge badge-danger">HTML5 </span>
                                 <span class="badge
-                                  badge-danger">CSS3 </span>
+                                  badge-danger"><a href="https://github.com/GranaraMariaSilvia/funkoPop">FunkoPop - Webpack</a></span>
                                 <span class="badge
                                   badge-danger">Javascript</span>
                                 <span class="badge
@@ -197,9 +190,14 @@
 
         </article>
 
-    <h2 class="display-4 text-center my-4" id="educacion">Educacion</h2>
+    <h2 class=" titulos display-4 text-center my-4" id="educacion">Educacion</h2>
     <article class="shadow p-3 mb-5 bg-white rounded" >
         <p>agregar cursos</p>
+    </article>
+
+    <h2 class=" titulos display-4 text-center my-4" id="contacto">Contacto</h2>
+    <article class="shadow p-3 mb-5 bg-white rounded" >
+        <p class="nuevo">correo: granarasilvia10@gmail.com</p>
     </article>
 
 
@@ -207,9 +205,9 @@
 
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">
-            <a href="#"> <i class="fab fa-linkedin fa-2x mr-2 "></i></a>
-            <a href="#"> <i class="fab fa-github-square fa-2x "></i></a>
-            <p class="lead mt-3">Maria Silvia Granara</p>
+            <a href="#"> <i class="fab fa-linkedin fa-3x mr-2 " style="color:black" ></i></a>
+            <a href="#"> <i class="fab fa-github-square fa-3x " style="color: black"></i></a>
+            <p class="lead mt-3" id="nombre">Maria Silvia Granara</p>
             <p>&copy;Todos los derechos reservados</p>
         </div>
     </footer>
